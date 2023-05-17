@@ -1,10 +1,11 @@
 .face-snap-card {
-    width: 40%;
+    width: 30%;
     margin:auto;
     padding: 1%;
     border: solid rgb(241, 241, 241) 0.5px;
     border-radius: 5px;
     box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.36);
+    margin-bottom: 5%;
    p{
     text-align:justify-content;
   }
@@ -14,14 +15,17 @@
   font-style: italic;
 }
   small{
-    font-size:5%;
+    font-size:12px;
   }
     img {
       width: 100%;
     }
-
+    .snapped{
+          color: rgb(221, 48, 106);
+          font-size: 22px;
+    }
     button{
-       color: rgb(221, 48, 106);
+        color: rgb(44, 44, 44);
         border: none;
         background-color: transparent;
         font-size: 20px;
