@@ -1,0 +1,9 @@
+<div class="face-snap-card">
+    <h2>{{ faceSnap.title }}</h2>
+    <small>Mis en ligne le {{ faceSnap.createdDate }}</small>
+    <img [src]="faceSnap.imageUrl" class=""  [alt]="faceSnap.title">
+    <p class="location" *ngIf="faceSnap.location">taken in {{ faceSnap.location }}</p>
+     <p >{{ faceSnap.description }}</p>
+    <p> <button  (click)="onAddSnap()"> ♥ </button>  {{ faceSnap.snaps }}</p>
+</div>
+<div> Simu </div>

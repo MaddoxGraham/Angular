@@ -1,0 +1,29 @@
+.face-snap-card {
+    width: 40%;
+    margin:auto;
+    padding: 1%;
+    border: solid rgb(241, 241, 241) 0.5px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.36);
+   p{
+    text-align:justify-content;
+  }
+.location{
+  color: rgb(180, 180, 180);
+  font-size: 12px;
+  font-style: italic;
+}
+  small{
+    font-size:5%;
+  }
+    img {
+      width: 100%;
+    }
+
+    button{
+       color: rgb(221, 48, 106);
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+  }
