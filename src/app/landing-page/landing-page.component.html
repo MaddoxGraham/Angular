@@ -1,0 +1,11 @@
+<div class="landing-block">
+    <img src="../../assets/snapfaceLogo.png" alt="SnapFace Logo">
+    <button (click)="onContinue()"> Start to snap ---------------->  💗 </button>
+
+    <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
+        <label for="email">Let us know your Email</label> 
+        <span> <input id="email" type="email" placeholder="Get some FaceSnap news" [(ngModel)]="userEmail" name="userEmail"> 
+        <button class="suscribe" type="submit" > ✨ Suscribe 🌟 </button>
+    </span>
+    </form>
+</div>

@@ -1,5 +1,5 @@
 <div class="face-snap-card">
-    <h2>{{ faceSnap.title | uppercase }}</h2>
+    <button class="title" (click)="onViewFaceSnap()">{{ faceSnap.title | uppercase }}</button>
     <small>Mis en ligne le {{ faceSnap.createdDate | date: 'd/M/yyyy - HH:mm' }}</small>
     <img [src]="faceSnap.imageUrl" class=""  [alt]="faceSnap.title">
     <p class="location" *ngIf="faceSnap.location">taken in {{ faceSnap.location }}</p>

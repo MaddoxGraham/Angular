@@ -4,4 +4,16 @@ header{
     margin-bottom: 5%; 
     color: white;
     box-shadow: -1px 9px 3px -1px rgba(0,0,0,0.12);
+    h1{
+        margin-left: 1%;
+    }
+    a{
+        margin-right: 1%;
+        margin-left: 1%;
+        text-decoration: none;
+    }
+    .active{
+        text-decoration: underline;
+        color: white;
+    }
 }
