@@ -11,9 +11,22 @@ header{
         margin-right: 1%;
         margin-left: 1%;
         text-decoration: none;
+        color: white;
     }
     .active{
         text-decoration: underline;
         color: white;
+    }
+    .more{
+        background-color: transparent;
+        border: none;
+      font-size: 18px;
+      cursor: pointer;
+        span{
+        color: white;
+        font-style: italic;
+        font-size: 10px;
+        }
+
     }
 }

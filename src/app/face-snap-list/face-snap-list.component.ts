@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
 import { FaceSnapsService } from '../services/face-snaps.services';
-import { Subject, interval, take, takeUntil, tap } from 'rxjs';
+import { Observable, Subject, interval, take, takeUntil, tap } from 'rxjs';
 
 @Component({
   selector: 'app-face-snap-list',
@@ -9,17 +9,26 @@ import { Subject, interval, take, takeUntil, tap } from 'rxjs';
   styleUrls: ['./face-snap-list.component.scss']
 })
 export class FaceSnapListComponent implements OnInit, OnDestroy{
+
+
   faceSnaps!: FaceSnap[];
+  faceSnaps$!: Observable<FaceSnap[]>
+
   private destroy$!: Subject<boolean>;
 
 constructor(private faceSnapsService:FaceSnapsService ){
 
 }
   ngOnInit() {
+
+    this.faceSnaps$= this.faceSnapsService.getAllFaceSnaps();
+
+
+
     //initialisation de l'objet subject
     this.destroy$ = new Subject<boolean>();
 
-    this.faceSnaps= this.faceSnapsService.getAllFaceSnaps();
+  //  this.faceSnaps= this.faceSnapsService.getAllFaceSnaps();
 
     //observable interval pour créer une fuite de mémoire 
     interval(1000).pipe(
